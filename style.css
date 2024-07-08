@@ -1,0 +1,130 @@
+body{background-color: wheat;}
+#face{
+    border:5px solid black;
+    height: 335px;
+    width: 335px;
+    background-color: pink;
+    border-radius: 100%;
+}    
+#eye-container{
+    position: absolute;
+    /*border: 1px solid black;*/
+    width: 200px;
+    height:150px;
+    top:214px;
+    left:55px;
+} 
+#left-eye, #right-eye{
+    position:absolute;
+    border:5px solid black;
+    height: 78px;
+    width:78px;
+    background-color: white;
+    border-radius: 50%;
+} 
+#right-eye{
+    left:150px;
+    transition: transform 1.5s ease-in-out;
+}
+
+#left-eye::before, #right-eye::before{
+    content: "";
+    position:absolute;
+    border:1px solid black;
+    width: 40px;
+    height: 40px;
+    background-color:black ;
+    border-radius: 50%;
+    top: 18px;
+    left:20px;
+}
+
+#right-eye:hover{
+    transform: scale(0);
+    transition: transform 1.5s linear;
+}
+
+#left-eye:hover{
+        transform: scale(0);
+        transition: transform 1.5s linear;
+}
+#mouth-container{
+    position:absolute;
+    border:4.5px solid black;
+    width: 160px;
+    height: 70px;
+    background-color:palevioletred;
+    top:125px;
+    left:30px;
+    border-radius:25%;
+    transition: transform 1.5s linear;
+
+}
+#left-mouth, #right-mouth{
+    position:absolute;
+    border:1px solid black;
+    height:45px;
+    width:45px;
+    background-color: black;
+    border-radius: 50%;
+    right:100px;
+    top:140px
+} 
+#right-mouth{
+    left:128px;
+    transition: transform 1.5s ease-in-out;
+}
+#right-mouth:hover{
+    transform: scale(0);
+    transition: transform 1.5s linear;
+}
+
+#left-mouth:hover{
+        transform: scale(0);
+        transition: transform 1.5s linear;
+}
+#ear-container{
+    position: absolute; 
+    /*border: 1px solid black;*/
+    width: 200px;
+    height:150px;
+    top:-60px;
+    left:6px;
+} 
+body{
+    position:absolute;
+    top:30px;
+    left:450px;
+}
+#left-ear, #right-ear{
+    position:absolute;
+    border:5px solid black;
+    height: 90px;
+    width:90px;
+    background-color: pink;
+    border-radius:70px 70px 140px 140px;
+    z-index:-30;
+} 
+#right-ear{
+    left:210px;
+    transition: transform 1.5s ease-in-out;
+}
+#left-ear{
+    right:190px;
+    transition: transform 1.5s ease-in-out;
+}
+
+#left-ear::before, #right-ear::before{
+    content:"";
+    position:absolute;
+
+}
+#right-ear:hover{
+    transform: scale(0);
+    transition: transform 1.5s linear;
+}
+
+#left-ear:hover{
+        transform: scale(0);
+        transition: transform 1.5s linear;
+}
